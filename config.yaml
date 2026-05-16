@@ -1,6 +1,6 @@
 # required configuration options
 name: Fusion (KinDR007 fork)
-version: 2024.10.1
+version: "2024.10.1+kindr.20260516-0945"
 slug: ha_fusion
 description: A modern, easy-to-use and performant custom Home Assistant dashboard (KinDR007 fork)
 arch:
