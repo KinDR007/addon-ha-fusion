@@ -43,12 +43,11 @@ jobs:
       # We hard-code the lowercase owner to match the lowercase
       # `image: ghcr.io/kindr007/...` field in config.yaml (GHCR requires lowercase).
       # `--all` is deprecated; list architectures explicitly.
-      # Current home-assistant/builder supports amd64 + aarch64.
-      - name: Build & publish addon (multi-arch)
+      # Only amd64 is needed for the target HA OS host.
+      - name: Build & publish addon (amd64)
         uses: home-assistant/builder@master
         with:
           args: |
             --amd64 \
-            --aarch64 \
             --target /data \
             --docker-hub ghcr.io/kindr007
