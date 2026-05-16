@@ -5,9 +5,9 @@ ARG BUILD_FROM
 FROM node:22 AS builder
 WORKDIR /app
 
-### remote
-# clone, build and remove repo example data
-RUN git clone --depth 1 https://github.com/matt8707/ha-fusion . && \
+### remote (clones from the KinDR007 fork of ha-fusion source)
+# To pin to a specific commit/tag, replace 'main' below.
+RUN git clone --depth 1 https://github.com/KinDR007/ha-fusion . && \
   npm install --verbose && \
   npm run build && \
   npm prune --omit=dev && \
