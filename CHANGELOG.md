@@ -1,7 +1,19 @@
-# Fusion (KinDR007 fork)
+# Fusion+
 
 Date-based versioning: `YYYY.M.N` where `N` is the sequential commit
 number in that month.
+
+## 2026.5.16
+- Rebrand: addon name changed from "Fusion (KinDR007 fork)" → **Fusion+**
+- `power_button` extended to support **meter mode** — entity_id can now
+  be a `sensor.*` (power/energy) directly, without an underlying switch
+- PowerButtonConfig: Power sensor & Energy sensor are now Select
+  comboboxes (filtered to relevant device_class), with Jinja Templater
+  support; Templater modal includes example snippets for both fields
+- PowerDetailsModal: hides toggle + Device section in meter mode
+  (the underlying entity IS the sensor — those readings duplicate the hero)
+- 24h graph enlarged (10rem → 16rem) and y-padding so peaks/troughs
+  don't clip at the chart edges
 
 ## 2026.5.13
 - **SensorDetailsModal**: rich read-only modal for `sensor.*` and

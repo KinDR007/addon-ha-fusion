@@ -1,4 +1,6 @@
-# addon-ha-fusion (KinDR007 fork)
+# Fusion+
+
+A friendlier, feature-rich Fusion dashboard for Home Assistant.
 
 Source: <https://github.com/KinDR007/ha-fusion>
 Upstream: <https://github.com/matt8707/ha-fusion>
